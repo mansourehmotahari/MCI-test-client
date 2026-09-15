@@ -1,0 +1,18 @@
+services:
+  node1:
+    build: .
+    container_name: api-node-1
+    ports:
+      - "7576:8000"
+      
+  node2:
+    build: .
+    container_name: api-node-2
+    ports:
+      - "7575:8000"
+
+  node3:
+    build: .
+    container_name: api-node-3
+    ports:
+      - "7577:8000"
